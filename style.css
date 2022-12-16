@@ -39,7 +39,14 @@ body {
 
 #item {
   font-size: 20px;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
+}
+
+#alert {
+  color: red;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  visibility: hidden;
 }
 
 .listing {
@@ -48,12 +55,38 @@ body {
   background-color: #fff;
   text-align: center;
   margin: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 0 0 20px;
+  border-radius: 5px;
 }
 
-.listing::first-letter {
+.name::first-letter {
   text-transform: capitalize;
 }
 
 h1 {
   padding: 20px;
+}
+
+.remove {
+  padding: 20px;
+  width: 60px;
+  background-color: #005c2e;
+  border: 0px solid #005c2e;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.remove:hover {
+  background-color: #4f9d69;
+  color: #fff;
+}
+
+.remove:active {
+  background-color: #005c2e;
+  color: #fff;
 }
